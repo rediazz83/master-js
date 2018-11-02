@@ -7,10 +7,12 @@ console.log("05-tipos-de-datos.js");
 var numero = "35.5";
 var suma = numero + 7;
 console.log("Suma es: " + suma); //Muestra 35.57
+console.log(typeof suma);
 
 //Funcion Number: Maneja todo tipo de valores: enteros, en coma flotante, etc
 suma = Number(numero) + 7
 console.log("Suma es: (Number) " + suma); //Muestra 42.5
+console.log(typeof suma);
 
 //Funciones parseInt y parseFloat son más especificas
 suma = parseInt(numero) + 7
@@ -21,3 +23,4 @@ console.log("Suma es: (parseFloat) " + suma); //Muestra 42.5
 
 var aString = String(suma) + 8;
 console.log("Volvemos la suma a texto " + aString); //Muestra 42.58
+console.log(typeof aString);
