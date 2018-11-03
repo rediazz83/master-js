@@ -30,14 +30,15 @@ function sumarConCallback(primerNumero, segundoNumero, mostrar, multiplicar, mos
   mostrarFinal(multiplicacion);
 }
 
+//Uso de funciones flecha
 sumarConCallback(2, 5,
-  function(suma) {
+  (suma) => {
     console.log("La suma es: " + suma);
   },
-  function(suma) {
+  (suma) => {
     return suma * 2;
   },
-  function(multiplicacion) {
+  (multiplicacion) => {
     console.log("La suma * 2 es: " + multiplicacion);
   }
 );
